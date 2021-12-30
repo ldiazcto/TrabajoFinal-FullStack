@@ -9,20 +9,23 @@
 }
 
 .logo{
-    width: 5%;
+    width: 4.5%;
     height: 40;
     align-content: left;
-    margin: 0;
-    display: flex;
+    margin: -10px 0 0 5px;
+    /* display: flex; */
+    float: left;
 }
 
 .fuenteAP{
     font-family: 'Encode Sans', sans-serif;
     font-weight: 600;
     font-size: 105%;
-    float: middle;
-    line-height: 80%;
-    display: flex;
+    margin: 0.65%;
+    margin: 15px 0 10px 20px;
+    /* Arriba -- derecha--abajo-- izquierda */
+    /* margin-top: 20px; */
+    line-height: 50%;
 }
 
 /* .fuentAP img{
