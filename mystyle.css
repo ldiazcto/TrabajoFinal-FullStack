@@ -9,6 +9,22 @@
 }
 
 .logo{
-    width: 6%;
+    width: 5%;
     height: 40;
+    align-content: left;
+    margin: 0;
+    display: flex;
 }
+
+.fuenteAP{
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: 600;
+    font-size: 105%;
+    float: middle;
+    line-height: 80%;
+    display: flex;
+}
+
+/* .fuentAP img{
+    float:  ;
+} */
