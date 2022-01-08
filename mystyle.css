@@ -1,3 +1,7 @@
+body{
+    background-color: #1f1f2e;
+}
+
 .bannerCode{
     width: 100%;
     background-position: right right;
@@ -6,13 +10,14 @@
 .profilePicture{
     width: 15%;
     margin-left: 5%;
+    margin-top: -400px;
 }
 
 .logo{
     width: 4.5%;
     height: 40;
     align-content: left;
-    margin: -10px 0 0 5px;
+    margin: -5px 10px 0 5px;
     /* display: flex; */
     float: left;
 }
@@ -22,12 +27,38 @@
     font-weight: 600;
     font-size: 105%;
     margin: 0.65%;
-    margin: 15px 0 10px 20px;
+    margin: 15px 0 10px 0;
     /* Arriba -- derecha--abajo-- izquierda */
     /* margin-top: 20px; */
     line-height: 50%;
+    color: white;
 }
 
+#infoTitulo{
+    color: white;
+    margin-left: 25%;
+}
+
+.fontBody{
+    lighting-color: beige;
+}
+
+.name{
+    color: white;
+    margin: -50px, 50px, 50px, 22%  ;
+    margin-left: 22%;
+    margin-top: -18%;
+    font-size: 300%;
+}
+.subtitle{
+    color: white;
+    text-align: center;
+}
+
+.container{
+    border: 2px solid #ccc;
+    margin-top: 12%;
+}
 /* .fuentAP img{
     float:  ;
 } */
