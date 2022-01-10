@@ -1,42 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8"> 
-<title>Page Title</title>
-<meta name="description" content="Roughly 155 characters">
-<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="mystyle.css" rel="stylesheet"> 
+    <meta charset="utf-8">
+    <title>Page Title</title>
+    <meta name="description" content="Roughly 155 characters">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="mystyle.css" rel="stylesheet">
 </head>
+
 <body>
-    <div>
-        <header>
-            <section>
-                <div><img class="logo" src = "resources/images/logoAP.png" alt="logo AP"  > </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="resources/images/logoAP.png" alt="logo AP" height="50px">
                 <h1 class="fuenteAP"> Argentina </h1>
                 <h2 class="fuenteAP"> Programa</h2>
-            </section>
-        </header>
-    </div>
-        <div> <img class="bannerCode" src = "resources/images/code.png">
-            <img class="profilePicture" src = "resources/images/profile.jpg">
-            <h3 class ="name">  LUZ M DIAZ</h3>
-            <div id="infoTitulo"> FullStack Developer Jr </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Acerca de mi</a>
+                        <a class="nav-link" href="#">Proyectos</a>
+                        <a class="nav-link" href="#">Habilidades y otros</a>
+                    </div>
+                </ul>
+            </div>
         </div>
+    </nav>
+    <div> <img class="bannerCode" src="resources/images/code.png">
+        <img class="profilePicture" src="resources/images/profile.jpg">
+        <h3 class="name"> LUZ M DIAZ</h3>
+        <div id="infoTitulo"> FullStack Developer Jr </div>
+    </div>
     <section>
         <div class="container">
-            <h3 class= "subtitle"> About me</h3>
+            <h3 class="subtitle"> About me</h3>
             <p> Hola, Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            ut aliquip ex ea commodo consequat </p>
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                ut aliquip ex ea commodo consequat </p>
         </div>
         <div class="container">
-            <h4 class= "subtitle"> Projects</h4>
+            <h4 class="subtitle"> Projects</h4>
         </div>
 
-        <div class = "container">
-            <h5 class = "subtitle"> Skills & Hardworking</h5>
+        <div class="container">
+            <h5 class="subtitle"> Skills & Hardworking</h5>
         </div>
     </section>
-<script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>

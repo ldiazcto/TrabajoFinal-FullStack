@@ -1,7 +1,27 @@
 body{
-    background-color: #1f1f2e;
+    background-color: rgb(120, 120, 120)
+     /* #1f1f2e; */
 }
 
+.navbar{
+    /* text-transform: uppercase; */
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    background: rgba(0,0,0,0.6) !important;
+}
+
+
+.navbar-dark .navbar-nav .navbar-link{
+    color: #fff;
+    padding-left: 20px;
+
+}
+
+.navbar-dark .navbar-nav .navbar-link,
+.navbar-dark .navbar-nav .navbar-link:hover{
+    color: #1ebb
+}
 .bannerCode{
     width: 100%;
     background-position: right right;
@@ -14,10 +34,10 @@ body{
 }
 
 .logo{
-    width: 4.5%;
-    height: 40;
+    width: 50px;
+    height: 40px;
     align-content: left;
-    margin: -5px 10px 0 5px;
+    margin: -0.5px 10px 0 5px;
     /* display: flex; */
     float: left;
 }
@@ -27,10 +47,10 @@ body{
     font-weight: 600;
     font-size: 105%;
     margin: 0.65%;
-    margin: 15px 0 10px 0;
+    margin: 12.5px 0 10px 0;
     /* Arriba -- derecha--abajo-- izquierda */
     /* margin-top: 20px; */
-    line-height: 50%;
+    line-height: 20%;
     color: white;
 }
 
