@@ -79,6 +79,98 @@ body{
     border: 2px solid #ccc;
     margin-top: 12%;
 }
+.card-titles .btn-edit {
+    flex: 1;
+    flex-direction:column;
+    align-self: flex-end;
+    justify-content: right;
+    display: flex;
+    text-align: end;
+}
+
+.btn-right {
+    display: flex;
+    float: right;
+    align-self: flex-end;
+}
+.fa-button,.fa {
+    color: black;
+    display: block;
+    height: 2.4rem;
+    width: 2.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+    border-radius: 50%;
+    background: transparent;
+}
+/* .btn-edit{
+    content: url(resources/images/pngwing.com.png);
+    width: 25px;
+    height: 25px;
+} */
+
+  
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
 /* .fuentAP img{
     float:  ;
 } */
+
+/* div#info-contact span a {
+    color: #0a66c2;
+    touch-action: manipulation;
+    text-decoration: none;
+}
+
+div#info-data ul#info-details li a {
+    color: black;
+    display: flex;
+    text-decoration: none;
+}
+div#info-data ul#info-details li a h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    align-self: center;
+    vertical-align: baseline;
+}
+div#info-data ul#info-details li a img {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+}
+ul.items-list li div.data-container a div.logo-image-container {
+    margin: 10px 0;
+}
+ul.items-list li div.data-container a div.logo-image-container img.logo-image {
+    height: 60px;
+    width: 60px;
+}
+ul.items-list li div.data-container a div.list-info {
+    margin: 0 10px;
+}
+ul.items-list li div.data-container a div.list-info h3 {
+    color: black;
+    margin: 10px;
+}
+ul.items-list li div.data-container a div.list-info h4, ul.items-list li div.data-container a div.list-info time {
+    color: gray;
+    margin: 0 5px;
+}
+ul.items-list li div.data-container a div.list-info p {
+    color: black;
+    margin: 0 5px;
+}
+ol.items-list {
+    list-style: none inside;
+}
+ol.items-list li div.aptitude-info a {
+    text-decoration: none;
+    color: grey;
+}
+  */
