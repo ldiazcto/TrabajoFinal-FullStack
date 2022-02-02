@@ -1,0 +1,191 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: rgb(120, 120, 120)
+     /* #1f1f2e; */
+}
+
+.navbar{
+    /* text-transform: uppercase; */
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    background: rgba(0,0,0,0.6) !important;
+}
+
+
+.navbar-dark .navbar-nav .navbar-link{
+    color: #fff;
+    padding-left: 20px;
+
+}
+
+.navbar-dark .navbar-nav .navbar-link,
+.navbar-dark .navbar-nav .navbar-link:hover{
+    color: #1ebb
+}
+.bannerCode{
+    width: 100%;
+    background-position: right right;
+    z-index: 1;
+}
+
+.profilePicture{
+    width: 15%;
+    margin-left: 5%;
+    margin-top: -400px;
+    z-index: 1;
+}
+.banner{
+    position: relative;
+    /* display: flex; */
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.contenido-banner{
+    color: white;
+}
+.contenido-banner #infoTitulo {
+    margin-left: 25%;
+    display: flex;
+    z-index: 1;
+}
+
+.contenido-banner h3{
+    margin: -50px, 50px, 50px, 22%  ;
+    margin-left: 22%;
+    margin-top: -18%;
+    font-size: 300%;
+    z-index: 1;
+}
+.logo{
+    width: 50px;
+    height: 40px;
+    align-content: left;
+    margin: -0.5px 10px 0 5px;
+    /* display: flex; */
+    float: left;
+}
+
+.fuenteAP{
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: 600;
+    font-size: 105%;
+    margin: 0.65%;
+    margin: 12.5px 0 10px 0;
+    /* Arriba -- derecha--abajo-- izquierda */
+    /* margin-top: 20px; */
+    line-height: 20%;
+    color: white;
+}
+
+
+.fontBody{
+    lighting-color: beige;
+}
+
+
+.subtitle{
+    color: white;
+    text-align: center;
+}
+
+.container{
+    border: 2px solid #ccc;
+    margin-top: 12%;
+}
+.card-titles .btn-edit {
+    flex: 1;
+    flex-direction:column;
+    align-self: flex-end;
+    justify-content: right;
+    display: flex;
+    text-align: end;
+}
+
+.btn-right {
+    display: flex;
+    float: right;
+    align-self: flex-end;
+}
+.fa-button,.fa {
+    color: black;
+    display: block;
+    height: 2.4rem;
+    width: 2.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+    border-radius: 50%;
+    background: transparent;
+}
+/* .btn-edit{
+    content: url(resources/images/pngwing.com.png);
+    width: 25px;
+    height: 25px;
+} */
+
+  
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+/* .fuentAP img{
+    float:  ;
+} */
+
+/* div#info-contact span a {
+    color: #0a66c2;
+    touch-action: manipulation;
+    text-decoration: none;
+}
+
+div#info-data ul#info-details li a {
+    color: black;
+    display: flex;
+    text-decoration: none;
+}
+div#info-data ul#info-details li a h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    align-self: center;
+    vertical-align: baseline;
+}
+div#info-data ul#info-details li a img {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+}
+ul.items-list li div.data-container a div.logo-image-container {
+    margin: 10px 0;
+}
+ul.items-list li div.data-container a div.logo-image-container img.logo-image {
+    height: 60px;
+    width: 60px;
+}
+ul.items-list li div.data-container a div.list-info {
+    margin: 0 10px;
+}
+ul.items-list li div.data-container a div.list-info h3 {
+    color: black;
+    margin: 10px;
+}
+ul.items-list li div.data-container a div.list-info h4, ul.items-list li div.data-container a div.list-info time {
+    color: gray;
+    margin: 0 5px;
+}
+ul.items-list li div.data-container a div.list-info p {
+    color: black;
+    margin: 0 5px;
+}
+ol.items-list {
+    list-style: none inside;
+}
+ol.items-list li div.aptitude-info a {
+    text-decoration: none;
+    color: grey;
+}
+  */
