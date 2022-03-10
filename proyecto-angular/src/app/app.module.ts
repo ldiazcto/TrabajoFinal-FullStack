@@ -8,6 +8,9 @@ import { BarComponent } from './components/bar/bar.component';
 import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { HabilidadesComponent } from './components/habilidades/habilidades.component';
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 @NgModule({ //le va a decir a angular donde estan los bloques que necesita para su construccion 
   declarations: [
@@ -20,7 +23,8 @@ import { HabilidadesComponent } from './components/habilidades/habilidades.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
