@@ -1,4 +1,4 @@
-package com.portfolio.BackEndSpringBoot.Controller;
+package com.portfolio.BackEndSpringBoot.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
