@@ -9,6 +9,7 @@ import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { HabilidadesComponent } from './components/habilidades/habilidades.component';
 import { HttpClientModule } from '@angular/common/http';
+import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
 
 
 
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     BarComponent,
     AcercaDeComponent,
     ProyectosComponent,
-    HabilidadesComponent
+    HabilidadesComponent,
+    IniciarSesionComponent
   ],
   imports: [
     BrowserModule,
