@@ -16,12 +16,12 @@ public class SkillService implements ISkillService{
 
 
     @Override
-    public List<Skill> see_skill() {
+    public List<Skill> get_skills() {
         return skillRepo.findAll();
     }
 
     @Override
-    public void create_skill(Skill skill) {
+    public void add_skill(Skill skill) {
          skillRepo.save(skill);
     }
 

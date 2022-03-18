@@ -1,21 +1,21 @@
 package com.portfolio.BackEndSpringBoot.controller;
 
-import com.portfolio.BackEndSpringBoot.model.Person;
-import com.portfolio.BackEndSpringBoot.service.IPersonService;
+import com.portfolio.BackEndSpringBoot.model.User;
+import com.portfolio.BackEndSpringBoot.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-public class ControllerPerson {
+public class ControllerUser {
 
     @Autowired
-    private IPersonService personService;
+    private IUserService userService;
 
     @PostMapping("/new/person")
-    public void agregarPersona(@RequestBody Person pers){
-        personService.create_person(pers);
+    public void add_user(@RequestBody User user){
+        userService.add_user(user);
     }
     // @RequestBody cuerpo de la solicitud, la persona en cuestion va avenir en el cuerpo de la solicitud
     //cuando un cliente se comunica econ una API lo ahce con un lenguaje en comun en este caso
@@ -24,21 +24,21 @@ public class ControllerPerson {
 
     @GetMapping("/see/person")
     @ResponseBody
-    public List<Person> verPersonas(){
-        return personService.see_person();
+    public List<User> get_user(){
+        return userService.get_user();
     }
 
     @DeleteMapping("/delete/{id}")
-    public void borrarPersona(@PathVariable Long id){
-        personService.delete_person(id);
+    public void delete_user(@PathVariable Long id){
+        userService.delete_user(id);
     }
     //REsponse body osea lo que devuelvas quiero que lo devuelvas en formato de un response body
     //es decri que lo devuelvas en el cuerpo de la respuesta
 
     @PutMapping("/edit/{id}")
-    public void editarPersona(@PathVariable Long id, @RequestBody Person pers ){
-        personService.delete_person(id);
-        personService.create_person(pers);
+    public void update_user(@PathVariable Long id, @RequestBody User user ){
+        userService.delete_user(id);
+        userService.add_user(user);
     }
 
 

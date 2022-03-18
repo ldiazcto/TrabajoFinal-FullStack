@@ -6,9 +6,9 @@ import java.util.List;
 
 public interface ISkillService {
 
-    public List<Skill> see_skill();
+    public List<Skill> get_skills();
 
-    public void create_skill(Skill skill);
+    public void add_skill(Skill skill);
 
     public void delete_skill(Long id);
 

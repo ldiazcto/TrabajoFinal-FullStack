@@ -16,13 +16,13 @@ public class ControllerSkill {
 
     @PostMapping("/new/skill")
     public void add_skill(@RequestBody Skill skill){
-        skillService.create_skill(skill);
+        skillService.add_skill(skill);
     }
 
     @GetMapping("/see/skill")
     @ResponseBody
-    public List<Skill> see_skills(){
-        return skillService.see_skill();
+    public List<Skill> get_skills(){
+        return skillService.get_skills();
     }
 
     @DeleteMapping("/deleteSkill/{id}")

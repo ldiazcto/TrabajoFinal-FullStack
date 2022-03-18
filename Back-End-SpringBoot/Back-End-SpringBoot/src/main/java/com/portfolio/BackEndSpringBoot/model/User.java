@@ -11,7 +11,7 @@ import javax.persistence.Id;
 
 @Getter @Setter
 @Entity
-public class Person {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -23,10 +23,10 @@ public class Person {
     private String about_me;
     private String adress;
 
-    public Person() {
+    public User() {
     }
 
-    public Person(Long id, String name, String last_name, Long phone, String email, String about_me, String adress) {
+    public User(Long id, String name, String last_name, Long phone, String email, String about_me, String adress) {
         this.id = id;
         this.name = name;
         this.last_name = last_name;
