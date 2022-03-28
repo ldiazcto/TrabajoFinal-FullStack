@@ -4,10 +4,7 @@ package com.portfolio.BackEndSpringBoot.model;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Getter @Setter
 @Entity
@@ -18,22 +15,29 @@ public class User {
     private Long id;
     private String name;
     private String last_name;
+    private String ocuppation;
     private Long phone;
     private String email;
+    @Lob @Basic(fetch = FetchType.LAZY)
+    @Column (columnDefinition = "text")
     private String about_me;
     private String adress;
+    private String url_image;
+    private String url_cv;
 
     public User() {
     }
 
-    public User(Long id, String name, String last_name, Long phone, String email, String about_me, String adress) {
+    public User(Long id, String name, String last_name, String ocuppation, Long phone, String email, String about_me, String adress, String url_image, String url_cv) {
         this.id = id;
         this.name = name;
         this.last_name = last_name;
+        this.ocuppation = ocuppation;
         this.phone = phone;
         this.email = email;
         this.about_me = about_me;
         this.adress = adress;
+        this.url_image = url_image;
+        this.url_cv = url_cv;
     }
-
 }
