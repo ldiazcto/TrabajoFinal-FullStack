@@ -1,4 +1,4 @@
-package com.portfolio.BackEndSpringBoot.secutiry.jwt;
+package com.portfolio.BackEndSpringBoot.security.jwt;
 
 public class JwtProvider {
 }

@@ -18,14 +18,17 @@ public class Skill {
     private Long id;
     private String name;
     private int percentage;
+    private String url_logo;
+    private int user_id;
 
     public Skill(){
-
     }
 
-    public Skill(Long id, String name, int percentage) {
+    public Skill(Long id, String name, int percentage, String url_logo, int user_id) {
         this.id = id;
         this.name = name;
         this.percentage = percentage;
+        this.url_logo = url_logo;
+        this.user_id = user_id;
     }
 }

@@ -1,4 +1,4 @@
-package com.portfolio.BackEndSpringBoot.secutiry.controller;
+package com.portfolio.BackEndSpringBoot.security.controller;
 
 public class AuthController {
 }

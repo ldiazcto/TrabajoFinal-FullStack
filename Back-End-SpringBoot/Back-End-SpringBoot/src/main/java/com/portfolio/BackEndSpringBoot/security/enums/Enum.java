@@ -1,4 +1,4 @@
-package com.portfolio.BackEndSpringBoot.secutiry.enums;
+package com.portfolio.BackEndSpringBoot.security.enums;
 
 public class Enum {
 }

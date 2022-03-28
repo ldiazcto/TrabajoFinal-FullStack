@@ -1,4 +1,4 @@
-package com.portfolio.BackEndSpringBoot.secutiry;
+package com.portfolio.BackEndSpringBoot.security;
 
 public class MainSecurity {
 }

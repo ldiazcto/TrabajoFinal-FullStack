@@ -1,4 +1,4 @@
-package com.portfolio.BackEndSpringBoot.secutiry.repository;
+package com.portfolio.BackEndSpringBoot.security.repository;
 
 public interface RolRepository {
 }

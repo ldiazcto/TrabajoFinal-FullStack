@@ -1,4 +1,4 @@
-package com.portfolio.BackEndSpringBoot.secutiry.entity;
+package com.portfolio.BackEndSpringBoot.security.entity;
 
 public class PrincipalUser {
 }

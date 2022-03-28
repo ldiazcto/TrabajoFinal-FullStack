@@ -1,4 +1,4 @@
-package com.portfolio.BackEndSpringBoot.secutiry.service;
+package com.portfolio.BackEndSpringBoot.security.service;
 
 public class UserService {
 }

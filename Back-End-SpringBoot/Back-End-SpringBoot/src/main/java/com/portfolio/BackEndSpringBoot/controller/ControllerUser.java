@@ -13,7 +13,7 @@ public class ControllerUser {
     @Autowired
     private IUserService userService;
 
-    @PostMapping("/new/person")
+    @PostMapping("/new/user")
     public void add_user(@RequestBody User user){
         userService.add_user(user);
     }
@@ -21,8 +21,7 @@ public class ControllerUser {
     //cuando un cliente se comunica econ una API lo ahce con un lenguaje en comun en este caso
     //un json
 
-
-    @GetMapping("/see/person")
+    @GetMapping("/see/user")
     @ResponseBody
     public List<User> get_user(){
         return userService.get_user();
@@ -40,6 +39,5 @@ public class ControllerUser {
         userService.delete_user(id);
         userService.add_user(user);
     }
-
 
 }
