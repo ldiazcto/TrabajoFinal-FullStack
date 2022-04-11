@@ -11,8 +11,9 @@ export class PortfolioService {
 
   obtenerDatos():Observable<any>{
     return this.http.get('./assets/data/data.json');
-    //la idea esq ahi escribamos una URL, por la cual nos vamos a comuninicar
-    //y vamos a enviar un request, y de ahi se obtienelos datos 
+    //la idea esq ahi escribamos una URL que es el Controller del backend
+    //, por la cual nos vamos a comuninicar
+    // vamos a enviar un request, y de ahi se obtienelos datos 
     //pero por ahora hacemos que devuelva en un json 
   }
 }
