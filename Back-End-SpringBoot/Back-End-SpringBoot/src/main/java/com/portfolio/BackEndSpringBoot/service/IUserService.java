@@ -15,4 +15,6 @@ public interface IUserService {
     public User find_user(Long id);
 
     public void edit_user(Long id);
+
+    User get_userById(long id);
 }

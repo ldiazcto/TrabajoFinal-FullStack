@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = {"http://localhost:4200/"})
 public class ControllerUser {
 
     @Autowired
@@ -38,6 +39,12 @@ public class ControllerUser {
     public void update_user(@PathVariable Long id, @RequestBody User user ){
         userService.delete_user(id);
         userService.add_user(user);
+    }
+
+    @GetMapping("/user/{id}")
+    @ResponseBody
+    public User getUserById(@PathVariable long id){
+        return userService.find_user(id);
     }
 
 }

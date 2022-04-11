@@ -6,11 +6,12 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class PortfolioService {
-
+  url:string = 'http://localhost:8080/user';
   constructor(private http:HttpClient) { }
 
-  obtenerDatos():Observable<any>{
-    return this.http.get('./assets/data/data.json');
+  obtenerDatos(id:number):Observable<any>{
+  //return this.http.get(`${this.url}`);
+    return this.http.get(this.url+"/"+id);
     //la idea esq ahi escribamos una URL que es el Controller del backend
     //, por la cual nos vamos a comuninicar
     // vamos a enviar un request, y de ahi se obtienelos datos 

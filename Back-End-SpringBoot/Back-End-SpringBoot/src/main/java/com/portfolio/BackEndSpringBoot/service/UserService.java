@@ -37,4 +37,9 @@ public class UserService implements IUserService {
     public void edit_user(Long id) {
 
     }
+
+    @Override
+    public User get_userById(long id) {
+        return null;
+    }
 }

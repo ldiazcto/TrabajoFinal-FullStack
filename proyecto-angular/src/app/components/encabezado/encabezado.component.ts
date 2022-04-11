@@ -14,11 +14,11 @@ export class EncabezadoComponent implements OnInit {
   ngOnInit(): void {
     //ahora podemos acceder desde el ng Init, accedemos a los metodos
     //que defini en service que no deja de ser una clase 
-    this.datosPortfolio.obtenerDatos().subscribe(data =>{
+    this.datosPortfolio.obtenerDatos(1).subscribe(data =>{
         console.log(data);
         this.miPortfolio = data;
+        //console.log("Llegue a encabezado");
+        //console.log(data);
       });
-
   }
-
 }
