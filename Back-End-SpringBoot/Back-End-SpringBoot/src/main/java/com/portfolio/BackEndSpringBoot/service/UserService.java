@@ -38,8 +38,4 @@ public class UserService implements IUserService {
 
     }
 
-    @Override
-    public User get_userById(long id) {
-        return null;
-    }
 }

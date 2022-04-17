@@ -37,6 +37,5 @@ public class SkillService implements ISkillService{
 
     @Override
     public void edit_skill(Long id) {
-
     }
 }

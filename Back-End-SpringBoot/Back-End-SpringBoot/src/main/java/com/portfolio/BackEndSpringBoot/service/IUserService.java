@@ -16,5 +16,4 @@ public interface IUserService {
 
     public void edit_user(Long id);
 
-    User get_userById(long id);
 }
