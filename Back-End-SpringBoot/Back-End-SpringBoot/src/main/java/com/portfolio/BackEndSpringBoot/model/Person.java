@@ -8,7 +8,7 @@ import javax.persistence.*;
 
 @Getter @Setter
 @Entity
-public class User {
+public class Person {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -25,10 +25,10 @@ public class User {
     private String url_image;
     private String url_cv;
 
-    public User() {
+    public Person() {
     }
 
-    public User(Long id, String name, String last_name, String ocuppation, Long phone, String email, String about_me, String adress, String url_image, String url_cv) {
+    public Person(Long id, String name, String last_name, String ocuppation, Long phone, String email, String about_me, String adress, String url_image, String url_cv) {
         this.id = id;
         this.name = name;
         this.last_name = last_name;
