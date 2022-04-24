@@ -1,5 +1,5 @@
 package com.portfolio.BackEndSpringBoot.security.enums;
 
-public enum NameRol {
+public enum RolName {
     ROLE_ADMIN, ROLE_USER
 }
