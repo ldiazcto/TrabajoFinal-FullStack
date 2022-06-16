@@ -35,6 +35,4 @@ public class ControllerProject {
         projectService.delete_project(id);
         projectService.add_project(project);
     }
-
-
 }
