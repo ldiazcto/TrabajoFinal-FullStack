@@ -17,6 +17,8 @@ export class EncabezadoComponent implements OnInit {
     this.datosPortfolio.obtenerDatos(1).subscribe(data =>{
         console.log(data);
         this.miPortfolio = data;
+        //en data guardo los datos que serian de User
+        //que contoenen nombre apellido about, email etc....
         //console.log("Llegue a encabezado");
         //console.log(data);
       });
