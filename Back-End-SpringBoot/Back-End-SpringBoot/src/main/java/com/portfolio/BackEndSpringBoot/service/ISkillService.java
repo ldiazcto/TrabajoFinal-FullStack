@@ -8,11 +8,11 @@ public interface ISkillService {
 
     public List<Skill> get_skills();
 
-    public void add_skill(Skill skill);
+    public Skill add_skill(Skill skill);
 
     public void delete_skill(Long id);
 
     public Skill find_skill(Long id);
 
-    public void edit_skill(Long id);
+    public Skill edit_skill(Skill skill);
 }

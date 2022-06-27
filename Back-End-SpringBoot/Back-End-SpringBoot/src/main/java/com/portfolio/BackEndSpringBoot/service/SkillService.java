@@ -21,8 +21,8 @@ public class SkillService implements ISkillService{
     }
 
     @Override
-    public void add_skill(Skill skill) {
-         skillRepo.save(skill);
+    public Skill add_skill(Skill skill) {
+          return skillRepo.save(skill);
     }
 
     @Override
@@ -36,6 +36,9 @@ public class SkillService implements ISkillService{
     }
 
     @Override
-    public void edit_skill(Long id) {
+    public Skill edit_skill(Skill skill) {
+        return skillRepo.save(skill);
     }
+
+
 }

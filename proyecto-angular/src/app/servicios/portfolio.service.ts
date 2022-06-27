@@ -20,7 +20,7 @@ export class PortfolioService {
     //pero por ahora hacemos que devuelva en un json 
   }
 
-  public getInfo(path: String, info :any): Observable<any>{
+  public getInfo(path: String): Observable<any>{
     return this.http.get<any>(`${this.apiServerUrl}/${path}`);
   }
   
