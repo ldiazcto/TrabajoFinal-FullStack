@@ -19,8 +19,8 @@ public class ProjectService implements IProjectService{
     }
 
     @Override
-    public void add_project(Project project) {
-        projectRepo.save(project);
+    public Project add_project(Project project) {
+        return projectRepo.save(project);
     }
 
     @Override
@@ -34,6 +34,7 @@ public class ProjectService implements IProjectService{
     }
 
     @Override
-    public void edit_project(Long id) {
+    public Project edit_project(Project project) {
+        return projectRepo.save(project);
     }
 }
