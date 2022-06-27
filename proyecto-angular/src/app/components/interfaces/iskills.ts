@@ -1,3 +1,3 @@
 export interface Skill{
-    tecnologia : string;
+    name : string;
 }
