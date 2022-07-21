@@ -110,6 +110,16 @@ body{
     float: right;
     align-self: flex-end;
 }
+.fa-sign-in{
+    color:#fff;
+}
+.btn-login {
+    color: #fff;
+    float: right;
+    height: 2.4rem;
+    width: 2.4rem;
+    font-size: 160%;
+}
 .fa-button,.fa {
     color: black;
     display: block;
