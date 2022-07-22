@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import {MatButtonModule} from '@angular/material/button';
 import { AppComponent } from './app.component';
 import { EncabezadoComponent } from './components/encabezado/encabezado.component';
 import { BarComponent } from './components/bar/bar.component';
@@ -21,12 +22,18 @@ import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesi
     AcercaDeComponent,
     ProyectosComponent,
     HabilidadesComponent,
-    IniciarSesionComponent
+    IniciarSesionComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule,
+    ReactiveFormsModule
+  ],
+  exports: [
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

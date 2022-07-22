@@ -6,11 +6,11 @@ import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesi
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 
 const routes: Routes = [
-  // {path: '', component: HomeComponent},
-  // {path: 'home', component: HomeComponent},
-  {path: 'acerca-de', component: AcercaDeComponent},
-  {path: 'proyectos', component: ProyectosComponent},
-  {path: 'skills', component: HabilidadesComponent },
+  // {path: 'acerca-de', component: AcercaDeComponent},
+  // {path: 'proyectos', component: ProyectosComponent},
+  // {path: 'skills', component: HabilidadesComponent },
+  {path: '', redirectTo: '/home', pathMatch:'full' },
+  // { path: '**', redirectTo: '/home'},
   {path: 'login', component: IniciarSesionComponent}
 ];
 
