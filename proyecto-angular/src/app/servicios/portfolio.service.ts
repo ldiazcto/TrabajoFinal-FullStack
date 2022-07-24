@@ -8,17 +8,18 @@ import { environment } from 'src/environments/environment';
 })
 export class PortfolioService {
   private apiServerUrl = environment.apiBaseUrl;
-  url:string = 'http://localhost:8080/person';
-  constructor(private http:HttpClient) { }
+  // url:string = 'http://localhost:8080/person';
+ constructor(private http:HttpClient) { }
 
-  obtenerDatos(id:number):Observable<any>{
-  //return this.http.get(`${this.url}`);
-    return this.http.get(this.url+"/"+id);
-    //la idea esq ahi escribamos una URL que es el Controller del backend
-    //, por la cual nos vamos a comuninicar
-    // vamos a enviar un request, y de ahi se obtienelos datos 
-    //pero por ahora hacemos que devuelva en un json 
-  }
+  // obtenerDatos(id:number):Observable<any>{
+  // //return this.http.get(`${this.url}`);
+  //   return this.http.get(this.url+"/"+id);
+  //   //la idea esq ahi escribamos una URL que es el Controller del backend
+  //   //, por la cual nos vamos a comuninicar
+  //   // vamos a enviar un request, y de ahi se obtienelos datos 
+  //   //pero por ahora hacemos que devuelva en un json 
+  // }
+
 
   public getInfo(path: String): Observable<any>{
     return this.http.get<any>(`${this.apiServerUrl}/${path}`);

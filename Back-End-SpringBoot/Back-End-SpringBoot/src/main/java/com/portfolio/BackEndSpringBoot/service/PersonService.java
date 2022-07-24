@@ -19,8 +19,8 @@ public class PersonService implements IPersonService {
     }
 
     @Override
-    public void add_person(Person person) {
-        personRepo.save(person);
+    public Person add_person(Person person) {
+        return personRepo.save(person);
     }
 
     @Override
@@ -34,8 +34,8 @@ public class PersonService implements IPersonService {
     }
 
     @Override
-    public void edit_person(Long id) {
-
+    public Person edit_person(Person person) {
+        return personRepo.save(person);
     }
 
 }

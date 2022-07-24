@@ -1,8 +1,10 @@
 <section class="banner"> <img class="bannerCode" src="/assets/images/code.png" alt="banner" >
     <img class="profilePicture" src="/assets/images/profile.jpg" alt = "imagen">
-    <div class="contenido-banner" > 
-      <h3><span style= "font-size:5vw">{{miPortfolio.name}} {{miPortfolio.last_name}}</span> </h3>
-      <div id="infoTitulo" style= "font-size:2.5vw">{{miPortfolio.ocuppation}}</div>
+    
+    <div class="contenido-banner" *ngFor="let person of personas">
+      <button class="btn" class="btn-center" style="position: absolute;"><a href="#"><i class="fa fa-pen"></i></a></button>
+      <h3><span style= "font-size:5vw">{{person?.name}} {{person?.last_name}}</span> </h3>
+      <div id="infoTitulo" style= "font-size:2.5vw">{{person?.ocuppation}}</div>
     </div>
     <!-- <div id="infoTitulo"> FullStack Developer Jr </div> -->
 </section>

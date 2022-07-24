@@ -1,0 +1,12 @@
+.btn-center {
+    display: flex; 
+    float: right;
+    align-self: flex-end;
+    width: 3.5%;
+    margin-left: 50%; 
+    margin-top: -2%;
+    height: auto;
+    z-index: 1;
+    background-color: transparent;
+    
+}

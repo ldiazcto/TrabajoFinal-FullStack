@@ -1,5 +1,6 @@
-<div class="container" id="about">
-    <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+<div class="container"*ngFor="let person of personas" id="about" >
+    <div class="btn-edit" (click)="setInfo(miPortfolio)" ><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
     <h3 class="subtitle"> About me </h3>
-    <p> {{miPortfolio.about_me}}</p>
+    <p> {{person?.about_me}}</p>
+    
 </div>

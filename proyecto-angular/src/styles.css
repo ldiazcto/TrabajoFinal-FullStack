@@ -105,6 +105,12 @@ body{
     text-align: end;
 }
 
+.button{
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background: none;
+}
 .btn-right {
     display: flex;
     float: right;
