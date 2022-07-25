@@ -13,7 +13,7 @@ import { Person } from '../interfaces/ipersona';
 export class AcercaDeComponent implements OnInit {
   miPortfolio:any;
   public personas!: Person[];
-  public pathPersona: String = "home"
+  public pathPersona: String = "home";
   public edit!: Person;
   public isUserLogged: Boolean = false;
 

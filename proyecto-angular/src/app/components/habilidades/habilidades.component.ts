@@ -70,5 +70,7 @@ export class HabilidadesComponent implements OnInit {
   //     }
   //   })
   // }
-
+  public setInfo(info : any): void {
+    this.edit = info;
+  }
 }

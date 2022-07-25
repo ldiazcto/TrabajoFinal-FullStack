@@ -1,8 +1,7 @@
-<div class="container" id="projects">
-    <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+<div class="container" >
     <h4 class="subtitle"> Projects</h4>
-    <div class="container-fluid"></div>
-    <div *ngFor="let project of projects">
-        <h6> {{project?.name}}</h6>
+    <div id="projects"*ngFor="let project of projects">
+        <div class="btn-edit" (click)="setInfo(project)" *ngIf="isUserLogged" data-bs-toggle="modal"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+            <h6> {{project?.name}}</h6>
     </div>
 </div>

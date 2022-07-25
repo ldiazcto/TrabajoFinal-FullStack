@@ -33,5 +33,7 @@ export class ProyectosComponent implements OnInit {
       (alert(error.message))
     })
   }
-
+  public setInfo(info : any): void {
+    this.edit = info;
+  }
 }

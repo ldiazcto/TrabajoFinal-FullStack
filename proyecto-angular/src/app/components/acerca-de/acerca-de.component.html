@@ -1,5 +1,5 @@
 <div class="container"*ngFor="let person of personas" id="about" >
-    <div class="btn-edit" (click)="setInfo(miPortfolio)" ><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+    <div class="btn-edit" (click)="setInfo(person)" *ngIf="isUserLogged" data-bs-toggle="modal" ><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
     <h3 class="subtitle"> About me </h3>
     <p> {{person?.about_me}}</p>
     
