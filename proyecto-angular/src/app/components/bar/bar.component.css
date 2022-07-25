@@ -1,0 +1,10 @@
+.black-background{
+    background-color: gray;
+}
+
+.modal-content {
+    background: #302B4E  !important;
+    border: 1.5px solid grey;
+    border-radius: 1rem;
+}
+/* class="card bg-dark text-white" style="border-radius: 1rem;" */

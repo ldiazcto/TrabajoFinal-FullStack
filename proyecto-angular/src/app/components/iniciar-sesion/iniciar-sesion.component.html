@@ -1,16 +1,16 @@
 
-<div>
+
   <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+      <div class="col-16 col-md-15 col-lg-6 col-xl-10">
+        <div >
             <div class="card-body p-5 text-center">
                 <form [formGroup]="form" id="enter-login" (ngSubmit)="onSubmit($event)">
-                  <div class="mb-3">
-                    <label for="nombre" class="form-label">Usuario</label>
+                  <div class="mb-4">
+                    <label for="nombre" class="form-label" style="color: white; font-weight: bolder;">Usuario</label>
                     <input type="text" name="nombre" formControlName="nombre" class="form-control" placeholder="Usuario" required>
                   </div>
-                  <div class="mb-3">
-                      <label for="password" class="form-label">Contraseña</label>
+                  <div class="mb-4">
+                      <label for="password" class="form-label" style="color: white; font-weight: bolder;" >Contraseña</label>
                       <input type="password" name="password" formControlName="password" class="form-control" placeholder="Contraseña" required>
                   </div>
                   <div *ngIf="loginError" class="text-danger">Las credenciales ingresadas no existen en nuestros registros.</div>
@@ -21,4 +21,3 @@
         </div>
     </div>
   </div>
-</div>
