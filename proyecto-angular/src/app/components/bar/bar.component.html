@@ -1,4 +1,4 @@
-<nav class="navbar navbar-b navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-b navbar-expand-lg navbar-dark bg-dark fixed-top" >
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <img class="logo" src="/assets/images/logoAP.png" alt="logo AP" height="50px">
@@ -12,15 +12,25 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0" >
                 <div class="navbar-nav">
-                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#encabezado">Home</a>
                     <a class="nav-link" href="#about" style="transition-delay: 100ms">Acerca de mi</a>
                     <a class="nav-link" href="#projects" style="transition-delay: 200ms">Proyectos</a>
                     <a class="nav-link" href="#skills" style="transition-delay: 300ms" >Habilidades y otros</a>
                 </div>
             </ul>
         </div>
-        <div>
-            <a class="nav-link" mat-button routerLink="login" routerLinkActive="active" class="btn-login"><i class="fa-solid fa-right-to-bracket"></i></a> 
-        </div>
+        <!-- <div>
+            <a class="nav-link" mat-button routerLink="/login"  *ngIf="!isUserLogged" routerLinkActive="active" class="btn-login"><i class="fa-solid fa-right-to-bracket"></i></a> 
+        </div> -->
+        <div *ngIf="isUserLogged, then cerrarSesion else iniciarSesion"></div>
+        <ng-template #cerrarSesion>
+            <button type="button" class="btn boton ms-md-5" (click)="logOut()"><i class="fa-solid fa-right-from-bracket"></i> CERRAR
+                SESION</button>
+        </ng-template>
+        <ng-template #iniciarSesion>
+                <button type="button" class="btn boton ms-md-5" data-bs-toggle="modal"
+                    data-bs-target="enter-login" ><i class="fa-solid fa-right-to-bracket me-2"></i> INICIAR
+                    SESION</button>
+        </ng-template>
     </div>
   </nav>

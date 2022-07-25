@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators,  } from '@angular/forms';
+import { Router } from '@angular/router';
 import { LoginService } from 'src/app/servicios/login.service';
 
 @Component({
@@ -13,7 +14,8 @@ export class IniciarSesionComponent implements OnInit {
 
   constructor(
     private loginService : LoginService,
-    private formBuilder : FormBuilder
+    private formBuilder : FormBuilder,
+    private router: Router
   ) {
     this.form = this.formBuilder.group(
       {
@@ -32,6 +34,8 @@ export class IniciarSesionComponent implements OnInit {
     this.loginService.login(this.form.value).subscribe(
       (response: Boolean) => {
         if (response){
+          // window.location.reload();
+          this.router.navigate(['/login']);
           window.location.reload();
         }
         else {

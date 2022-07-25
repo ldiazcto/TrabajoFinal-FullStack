@@ -11,6 +11,7 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { HabilidadesComponent } from './components/habilidades/habilidades.component';
 import { HttpClientModule } from '@angular/common/http';
 import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
+import { ContenedorComponent } from './contenedor/contenedor.component';
 
 
 
@@ -23,6 +24,7 @@ import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesi
     ProyectosComponent,
     HabilidadesComponent,
     IniciarSesionComponent,
+    ContenedorComponent,
   ],
   imports: [
     BrowserModule,
