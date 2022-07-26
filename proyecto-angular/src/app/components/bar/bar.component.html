@@ -2,8 +2,8 @@
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <img class="logo" src="/assets/images/logoAP.png" alt="logo AP" height="50px">
-            <h1 class="fuenteAP"> Argentina </h1>
-            <h2 class="fuenteAP"> Programa</h2>
+            <h1 class="fuenteAP">Argentina<br>Programa</h1>
+            <!-- <h1 class="fuenteAP"></h1> -->
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
             aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,9 +13,9 @@
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0" >
                 <div class="navbar-nav">
                     <a class="nav-link" href="#encabezado">Home</a>
-                    <a class="nav-link" href="#about" style="transition-delay: 100ms">Acerca de mi</a>
-                    <a class="nav-link" href="#projects" style="transition-delay: 200ms">Proyectos</a>
-                    <a class="nav-link" href="#skills" style="transition-delay: 300ms" >Habilidades y otros</a>
+                    <a class="nav-link" href="#about" style="transition-delay: 100ms">About me</a>
+                    <a class="nav-link" href="#projects" style="transition-delay: 200ms">Projects</a>
+                    <a class="nav-link" href="#skills" style="transition-delay: 300ms">Skills & Hardworking</a>
                 </div>
             </ul>
         </div>
@@ -24,13 +24,13 @@
         </div> -->
         <div *ngIf="isUserLogged, then cerrarSesion else iniciarSesion"></div>
         <ng-template #cerrarSesion>
-            <button type="button" class="btn boton ms-md-5" (click)="logOut()"><i class="fa-solid fa-right-from-bracket"></i> CERRAR
-                SESION</button>
+            <button type="button" class="btn boton ms-md-5" (click)="logOut()"><i class="fa-solid fa-right-from-bracket"></i> LOG
+                OUT</button>
         </ng-template>
         <ng-template #iniciarSesion>
                 <button type="button"  class="btn boton ms-md-5" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal" ><i class="fa-solid fa-right-to-bracket me-2"></i> INICIAR
-                    SESION</button>
+                    data-bs-target="#exampleModal" style="color: white;"><i class="fa-solid fa-right-to-bracket me-2"></i> LOG IN
+                    </button>
         </ng-template>
     </div>
   </nav>
