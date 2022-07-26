@@ -1,6 +1,12 @@
-<div class="container"*ngFor="let person of personas" id="about" >
-    <div class="btn-edit" (click)="setInfo(person)" *ngIf="isUserLogged" data-bs-toggle="modal" ><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
-    <h3 class="subtitle"> About me </h3>
-    <p> {{person?.about_me}}</p>
-    
+<div class="about-container"*ngFor="let person of personas" id="about">
+    <div class="row contenido">
+        <div class="col-md-6 col-12 imagen">
+            <div class="capaColor"></div>
+            <h3 class="subtitle"> About me </h3>
+        </div>
+        <div class="col-md-6 col-12 texto">
+            <div class="btn-edit" (click)="setInfo(person)" *ngIf="isUserLogged" data-bs-toggle="modal" ><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+            <p> {{person?.about_me}}</p>
+        </div>
+    </div>
 </div>
