@@ -55,7 +55,7 @@ export class BarComponent implements OnInit {
   public logOut():void {
     this.loginService.logout();
     this.isUserLogged = false;
-    this.router.navigate(['/login']);
+    //this.router.navigate(['/login']);
     window.location.reload();
   }
 }

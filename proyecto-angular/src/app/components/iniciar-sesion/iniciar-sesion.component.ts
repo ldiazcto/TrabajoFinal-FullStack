@@ -19,7 +19,7 @@ export class IniciarSesionComponent implements OnInit {
   ) {
     this.form = this.formBuilder.group(
       {
-        nombre: ['', [Validators.required]],
+        name: ['', [Validators.required]],
         password: ['', [Validators.required]]
       }
     )
@@ -35,7 +35,9 @@ export class IniciarSesionComponent implements OnInit {
       (response: Boolean) => {
         if (response){
           // window.location.reload();
-          this.router.navigate(['/login']);
+          // this.router.navigate(['/login']);
+          console.log('iniciar-sesion Component');
+          console.log(response);
           window.location.reload();
         }
         else {

@@ -16,6 +16,8 @@ export class LoginService {
     return this.http.post<Boolean>(`${this.apiServerUrl}/login`, credentials).pipe(
       tap((response: Boolean) => {
         if (response)
+        // console.log('toy en login');
+        console.log(response);
           sessionStorage.setItem("user", "admin");
       })
     );
