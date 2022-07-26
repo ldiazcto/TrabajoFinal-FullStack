@@ -1,12 +1,19 @@
-<div class="encabezado">
-<section class="banner"> <img class="bannerCode" src="/assets/images/code.png" alt="banner" >
-    <img class="profilePicture" src="/assets/images/profile.jpg" alt = "imagen">
-    
-    <div class="contenido-banner" *ngFor="let person of personas">
-      <button class="btn" class="btn-center" style="position: absolute;"  (click)="setInfo(person)" *ngIf="isUserLogged" data-bs-toggle="modal"><a href="#"><i class="fa fa-pen"></i></a></button>
-      <h3><span style= "font-size:5vw">{{person?.name}} {{person?.last_name}}</span> </h3>
-      <div id="infoTitulo" style= "font-size:2.5vw">{{person?.ocuppation}}</div>
+<div class="encabezado" class="hero">
+<section>
+    <!-- <img class="profilePicture" src="/assets/images/profile.jpg" alt = "imagen"> -->
+    <div  class="content" *ngFor="let person of personas">
+      <!-- <button class="btn" class="btn-center" style="position: absolute;"  (click)="setInfo(person)" *ngIf="isUserLogged" data-bs-toggle="modal"><a href="#"><i class="fa fa-pen"></i></a></button> -->
+      <small  class="big-heading" style="color: rgb(100, 255, 218); font-size:3vw;  font-family:'SF Mono,Fira Code,Fira Mono,Roboto Mono,monospace;'">Hi, my name is</small>
+      <h3  class="big-heading body-2" style= "color: rgb(204, 214, 246); font-family:'Calibre,Inter,San Francisco,SF Pro Text,-apple-system,system-ui,sans-serif'; ">{{person?.name}} {{person?.last_name}}  </h3>
+      <h4  class="big-heading body-2" style="color: rgb(136, 146, 176); font-family:'Calibre,Inter,San Francisco,SF Pro Text,-apple-system,system-ui,sans-serif'" id="infoTitulo">{{person?.ocuppation}}</h4>
     </div>
+    <!-- <div class="side-bar">
+      <img src="" class="menu">
+      <div class="social-links">
+        <i class="fa-brands fa-github"></i>
+        <img src="/assets/images/linkedln.jpg">
+      </div>
+    </div> -->
     <!-- <div id="infoTitulo"> FullStack Developer Jr </div> -->
 </section>
 </div>
