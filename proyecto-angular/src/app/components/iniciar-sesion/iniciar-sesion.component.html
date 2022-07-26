@@ -14,7 +14,7 @@
                       <input type="password" name="password" formControlName="password" class="form-control" placeholder="Contraseña" required>
                   </div>
                   <div *ngIf="loginError" class="text-danger">Las credenciales ingresadas no existen en nuestros registros.</div>
-                  <button routerLink="/login" class="enter-login" type="submit" [disabled]="form.invalid"  class="btn" style ="background-color:white" >Log in</button>
+                  <button  class="enter-login" type="submit" [disabled]="form.invalid"  class="btn" style ="background-color:white" >Log in</button>
                   <!-- <button routerLink="/home" class="btn" style="background-color:white">Cancelar</button> -->
                 </form>
             </div>
