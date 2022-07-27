@@ -11,7 +11,7 @@ const routes: Routes = [
   // {path: 'skills', component: HabilidadesComponent },
   // {path: 'home', component: BaseRouteReuseStrategy },
   {path: 'login', component: IniciarSesionComponent},
-  {path: '', redirectTo: '/home', pathMatch:'full' },
+  // {path: '', redirectTo: '/home', pathMatch:'full' },
   { path: '**', redirectTo: '/home'}
   
 ];

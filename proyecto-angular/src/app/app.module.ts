@@ -12,6 +12,7 @@ import { HabilidadesComponent } from './components/habilidades/habilidades.compo
 import { HttpClientModule } from '@angular/common/http';
 import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
 import { ContenedorComponent } from './contenedor/contenedor.component';
+import { PortfolioService } from './servicios/portfolio.service';
 
 
 
@@ -31,13 +32,16 @@ import { ContenedorComponent } from './contenedor/contenedor.component';
     AppRoutingModule,
     HttpClientModule,
     MatButtonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   exports: [
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    PortfolioService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

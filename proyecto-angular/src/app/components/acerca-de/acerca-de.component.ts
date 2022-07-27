@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { LoginService } from 'src/app/servicios/login.service';
 import { PortfolioService } from 'src/app/servicios/portfolio.service';
 import { Person } from '../interfaces/ipersona';
+import { NgForm } from '@angular/forms';
 
 
 @Component({

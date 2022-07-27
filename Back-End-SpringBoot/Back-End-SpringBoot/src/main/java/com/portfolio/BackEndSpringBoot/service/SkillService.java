@@ -5,10 +5,12 @@ import com.portfolio.BackEndSpringBoot.model.Skill;
 import com.portfolio.BackEndSpringBoot.repository.SkillRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import javax.transaction.Transactional;
 
 import java.util.List;
 
 @Service
+@Transactional
 public class SkillService implements ISkillService{
 
     @Autowired
