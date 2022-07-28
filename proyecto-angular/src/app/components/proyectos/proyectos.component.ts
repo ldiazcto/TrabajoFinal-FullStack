@@ -3,6 +3,9 @@ import { Component, OnInit } from '@angular/core';
 import {Project} from 'src/app/components/interfaces/iprojects'
 import { LoginService } from 'src/app/servicios/login.service';
 import { PortfolioService } from 'src/app/servicios/portfolio.service';
+import { NgForm } from '@angular/forms';
+
+
 @Component({
   selector: 'app-proyectos',
   templateUrl: './proyectos.component.html',
@@ -33,6 +36,40 @@ export class ProyectosComponent implements OnInit {
       (alert(error.message))
     })
   }
+
+  public addProyecto(addProyecto: NgForm): void {
+    this.infoService.addInfo(this.pathProjects, addProyecto.value ).subscribe({
+      next: () => {
+        this.getProjects();
+        addProyecto.reset();
+      },
+      error: (error: HttpErrorResponse) => {
+        (alert(error.message));
+        addProyecto.reset();
+      }
+    })
+  }
+
+  public editProyecto(explab: Project): void {
+    this.infoService.editInfo(this.pathProjects, explab ).subscribe({
+      next: () => this.getProjects(),
+
+      error: (error: HttpErrorResponse) => {
+        (alert(error.message))
+      }
+    })
+  }
+
+  public deleteProyecto(expProyectoId: number): void {
+    this.infoService.deleteInfo(this.pathProjects, expProyectoId ).subscribe({
+      next: () => this.getProjects(),
+
+      error: (error: HttpErrorResponse) => {
+        (alert(error.message))
+      }
+    })
+  }
+
   public setInfo(info : any): void {
     this.edit = info;
   }

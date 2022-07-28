@@ -1,4 +1,5 @@
 <div class="proyectos" id="projects" >
+    <button class="btn-add btn" *ngIf="isUserLogged" data-bs-toggle="modal" data-bs-target="#addModalProject" title="Add Project"><i class="fa-solid fa-circle-plus"></i></button>
     <div>
     <h4 class="seccion-proyectos"> Projects</h4>
     <div class="card-group ">
@@ -10,10 +11,47 @@
                         <p class="card-text descripcion"> {{project?.description}}</p>
                         <a [href]="project?.url_project">Repositorio</a>
                     </div>
-                    <div class="btn-edit" (click)="setInfo(project)" *ngIf="isUserLogged" data-bs-toggle="modal"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+                    <section>
+                        <div class="btn" (click)="setInfo(project)" *ngIf="isUserLogged" data-bs-toggle="modal"  data-bs-target="#deleteModalProject" title="Delete Project"><a href="#" ><i class="fa-regular fa-circle-xmark"></i></a></div>
+                        <div class="btn"  (click)="setInfo(project)" *ngIf="isUserLogged" data-bs-toggle="modal"  data-bs-target="#editModalProject" title="Edit Project"><a href="#" ><i class="fa fa-pen"></i></a></div>
+                    </section>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+</div>
+
+<!-- Modal add proyecto -->
+<div class="modal fade" id="addModalProject" tabindex="-1" aria-labelledby="addmodalProyectoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" >
+        <div class="modal-content container-fluid">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add new project</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <form #addFormProyecto="ngForm" (ngSubmit)="addProyecto(addFormProyecto)">
+                    <div class="form-group" class="mb-3">
+                        <label for="name">Name: </label>
+                        <input type="text" ngModel name="name" class="form-control inputs-edit" id="name" placeholder="What's the name of the project?" required>
+                    </div>
+                    <div class="form-group" class="mb-3">
+                        <label for="url_project">Link: </label>
+                        <input type="text" ngModel name="url_project" class="form-control inputs-edit" id="url_project" placeholder="Url" required>
+                    </div>
+                    <div class="form-group" class="mb-3" >
+                        <label for="description">Description: </label>
+                        <input type="text" ngModel name="description" class="form-control inputs-edit" id="description" placeholder="Give a description" required>
+                    </div>
+                    <div class="form-group" class="mb-3">
+                        <label for="url_image">Imagen: </label>
+                        <input type="text" ngModel name="url_image" class="form-control inputs-edit" id="url_image" placeholder="Give an imagen" required>
+                    </div>
+                    <button class="btn btn-danger" [disabled]="addFormProyecto.invalid" type="submit" data-bs-dismiss="modal" aria-label="Close">Add</button>
+                </form>
+            </div>
+        </div>
     </div>
 </div>

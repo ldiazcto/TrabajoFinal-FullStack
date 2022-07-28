@@ -69,6 +69,12 @@ body{
     float: left;
 }
 
+*{
+    font-family: var(--font-sans);
+    font-style: normal;
+}
+
+
 .fuenteAP{
     font-family: 'Encode Sans', sans-serif;
     font-weight: 800;
@@ -130,6 +136,14 @@ body{
     width: 2.4rem;
     font-size: 160%;
 }
+
+.btn-add{
+    font-size: 2rem;
+    right: 50px;
+    position: absolute;
+}
+
+
 .fa-button,.fa {
     color: black;
     display: block;
