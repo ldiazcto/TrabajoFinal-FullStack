@@ -5,6 +5,7 @@
     padding: 170px 30px;
     color: var(--color1);
     position: relative;
+    height: 100vh;
    
 }
 
@@ -38,7 +39,8 @@
     text-align: center;
     /* text-decoration:underline; */
     color: aliceblue;
-    font-family: Arial Black;}
+    font-family: Arial Black;
+}
 
 .card{
     position: relative;

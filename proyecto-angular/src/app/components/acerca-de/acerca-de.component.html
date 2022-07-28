@@ -1,8 +1,9 @@
 <div class="about-container"*ngFor="let person of personas" id="about">
-    <div class="row contenido">
+    <div class="row contenido" >
         <div class="col-md-6 col-12 imagen">
-            <div class="capaColor"></div>
-            <h3 class="subtitle"> About me </h3>
+            <h4 class ="modal-title"> About me </h4>
+            <div class="capaColor" style="font-family:Arial ;"></div>
+            
         </div>
         <div class="col-md-6 col-12 texto">
             <div class="btn-edit" (click)="setInfo(person)" *ngIf="isUserLogged" data-bs-toggle="modal" data-bs-target="#myModal" ><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
