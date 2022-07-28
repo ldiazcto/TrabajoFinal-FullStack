@@ -50,8 +50,8 @@ export class ProyectosComponent implements OnInit {
     })
   }
 
-  public editProyecto(explab: Project): void {
-    this.infoService.editInfo(this.pathProjects, explab ).subscribe({
+  public editProyecto(editProyecto: Project): void {
+    this.infoService.editInfo(this.pathProjects, editProyecto ).subscribe({
       next: () => this.getProjects(),
 
       error: (error: HttpErrorResponse) => {
@@ -60,8 +60,8 @@ export class ProyectosComponent implements OnInit {
     })
   }
 
-  public deleteProyecto(expProyectoId: number): void {
-    this.infoService.deleteInfo(this.pathProjects, expProyectoId ).subscribe({
+  public deleteProyecto(deleteProyecto: number): void {
+    this.infoService.deleteInfo(this.pathProjects, deleteProyecto ).subscribe({
       next: () => this.getProjects(),
 
       error: (error: HttpErrorResponse) => {

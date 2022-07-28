@@ -38,38 +38,38 @@ export class HabilidadesComponent implements OnInit {
     })
   }
 
-  // public add_skill(addFormSkill: NgForm): void {
-  //   this.infoService.addInfo(this.pathSkills, addFormSkill.value ).subscribe({
-  //     next: () => {
-  //       this.getSkills();
-  //       addFormSkill.reset();
-  //     },
-  //     error: (error: HttpErrorResponse) => {
-  //       (alert(error.message));
-  //       addFormSkill.reset();
-  //     }
-  //   })
-  // }
+  public add_skill(addFormSkill: NgForm): void {
+    this.infoService.addInfo(this.pathSkills, addFormSkill.value ).subscribe({
+      next: () => {
+        this.getSkills();
+        addFormSkill.reset();
+      },
+      error: (error: HttpErrorResponse) => {
+        (alert(error.message));
+        addFormSkill.reset();
+      }
+    })
+  }
 
-  // public edit_skill(skills: Skill): void {
-  //   this.infoService.editInfo(this.pathSkills, skills ).subscribe({
-  //     next: () => this.getSkills(),
+  public edit_skill(skills: Skill): void {
+    this.infoService.editInfo(this.pathSkills, skills ).subscribe({
+      next: () => this.getSkills(),
 
-  //     error: (error: HttpErrorResponse) => {
-  //       (alert(error.message))
-  //     }
-  //   })
-  // }
+      error: (error: HttpErrorResponse) => {
+        (alert(error.message))
+      }
+    })
+  }
 
-  // public delete_skill(skillId: number): void {
-  //   this.infoService.deleteInfo(this.pathSkills, skillId ).subscribe({
-  //     next: () => this.getSkills(),
+  public delete_skill(skillId: number): void {
+    this.infoService.deleteInfo(this.pathSkills, skillId ).subscribe({
+      next: () => this.getSkills(),
 
-  //     error: (error: HttpErrorResponse) => {
-  //       (alert(error.message))
-  //     }
-  //   })
-  // }
+      error: (error: HttpErrorResponse) => {
+        (alert(error.message))
+      }
+    })
+  }
   public setInfo(info : any): void {
     this.edit = info;
   }

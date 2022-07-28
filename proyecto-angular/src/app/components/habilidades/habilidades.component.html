@@ -1,11 +1,96 @@
 <div class="skills" id="skills">
+    <button class="btn-add btn" *ngIf="isUserLogged" data-bs-toggle="modal" data-bs-target="#addModalSkill" title="Add Skill"><i class="fa-solid fa-circle-plus"></i></button>
     <h5 class="seccion-skills"> Skills & Hardworking</h5>
     <div class="cardsGroup">
         <div *ngFor="let skill of skills" >
             <div class="card" style="width: 18rem;">
             <img src={{skill?.url_logo}} class="card-img-top imagen-habilidad" alt="...">
-            <div class="btn-edit" (click)="setInfo(skill)" *ngIf="isUserLogged" data-bs-toggle="modal"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
-                <h6> {{skill?.name}}</h6>
+            <section>
+                <div class="btn" (click)="setInfo(skill)" *ngIf="isUserLogged" data-bs-toggle="modal"  data-bs-target="#deleteModalSkill" title="Delete Skill"><i class="fa-regular fa-circle-xmark"></i></div>
+                <div class="btn" (click)="setInfo(skill)" *ngIf="isUserLogged" data-bs-toggle="modal" data-bs-target="#editModalSkill"><i class="fa fa-pen"></i></div>
+                    <h6> {{skill?.name}}</h6>
+            </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal add skill -->
+<div class="modal fade" id="addModalSkill" tabindex="-1" aria-labelledby="addmodalSkillLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" >
+        <div class="modal-content container-fluid">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add new skill</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <form #addFormSkill="ngForm" (ngSubmit)="add_skill(addFormSkill)">
+                    <div class="form-group" class="mb-3">
+                        <label for="name">Name: </label>
+                        <input type="text" ngModel name="name" class="form-control inputs-edit" id="name" placeholder="What's the name of the skill?" required>
+                    </div>
+                    <div class="form-group" class="mb-3">
+                        <label for="url_logo">Imagen: </label>
+                        <input type="text" ngModel name="url_logo" class="form-control inputs-edit" id="url_logo" placeholder="Give an logo" required>
+                    </div>
+                    <button class="btn btn-danger" [disabled]="addFormSkill.invalid" type="submit" data-bs-dismiss="modal" aria-label="Close">Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal edit skill -->
+<div class="modal fade" id="editModalSkill" tabindex="-1" aria-labelledby="editmodalSkillLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" >
+        <div class="modal-content container-fluid">
+            <div class="modal-header">
+                <div>
+                    <h5 class="modal-title" id="editmodalSkillLabel" style="font-weight: bold;">Edit skill</h5>
+                    </div>
+                <div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            </div>
+
+            
+            <div class="modal-body">
+                <form #editFormSkill="ngForm">
+                    <div class="form-group" class="mb-3">
+                        <label for="name">Name: </label>
+                        <input type="text" ngModel="{{edit?.name}}" name="name" class="form-control inputs-edit" id="name" placeholder="What's the name of the skill?" required>
+                    </div>
+                    <input type="hidden" ngModel="{{edit?.id}}" name="id" class="form-control" id="id">
+                    <div class="form-group" class="mb-3">
+                        <label for="url_logo">Imagen: </label>
+                        <input type="text" ngModel="{{edit?.url_logo}}" name="url_logo" class="form-control inputs-edit" id="url_logo" placeholder="Give an logo" required>
+                    </div>
+                    <button class="btn btn-danger" (click)="edit_skill(editFormSkill.value)" type="submit" data-bs-dismiss="modal" aria-label="Close">Accept</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal delete skill -->
+<div class="modal fade" id="deleteModalSkill" tabindex="-1" aria-labelledby="deletemodalSkillLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-top">
+                <div>
+                    <h5 class="modal-title" id="deletemodalSkillLabel" style="font-weight: bold;"> </h5>
+                </div>
+                <div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-left: 95%;"></button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <h4>Click Yes if you are sure that you want to permanently delete the project {{edit?.name}}?</h4>
+                <button  class="btn btn-danger" (click)="delete_skill(edit.id)"  type="submit" data-bs-dismiss="modal" aria-label="Close">
+                    Yes
+                </button>
             </div>
         </div>
     </div>
