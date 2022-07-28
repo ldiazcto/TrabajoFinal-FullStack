@@ -54,3 +54,11 @@
     object-fit: cover;
     object-position: center;
 }
+
+.modal-title{
+    font-family: Arial ;
+    font-size: 15px;
+    text-indent: 5px;
+    font-weight: bold;
+    margin: 0;
+}
