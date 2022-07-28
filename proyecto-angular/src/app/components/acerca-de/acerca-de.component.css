@@ -10,15 +10,16 @@
     position: relative;
     z-index: 9;
     height: 100vh;
+    
 }
 .modal-title{
     position: absolute;
     font-family: Arial Black ;
-    font-size: 40px;
     text-indent: 5px;
     font-weight: bold;
     color: white;
     margin: 0;
+    font-size: 3.5vw;
 }
 .contenido{
     width: 100%;
