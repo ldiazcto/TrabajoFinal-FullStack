@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false, 
-  apiBaseUrl:'https://portfolio-lm.herokuapp.com/'
+  apiBaseUrl:'https://portfolio-lm.herokuapp.com'
 };
 
 /*

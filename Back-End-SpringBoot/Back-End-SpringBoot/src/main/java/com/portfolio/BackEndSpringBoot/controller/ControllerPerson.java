@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = {"https://portfolio-lu.web.app/"})
+@CrossOrigin(origins = {"https://portfolio-lu.web.app"})
 @RestController
 @RequestMapping("/home")
 public class ControllerPerson {
