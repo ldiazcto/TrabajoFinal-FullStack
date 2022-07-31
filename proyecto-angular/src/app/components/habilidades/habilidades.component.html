@@ -1,12 +1,12 @@
 <div class="skills" id="skills">
-    <button class="btn-add btn" *ngIf="isUserLogged" data-bs-toggle="modal" data-bs-target="#addModalSkill" title="Add Skill"><i class="fa-solid fa-circle-plus"></i></button>
+    <button class="btn-add btn" *ngIf="isUserLogged" data-bs-toggle="modal" data-bs-target="#addModalSkill" title="Add Skill"><i class="fa fa-plus-circle"></i></button>
     <h5 class="seccion-skills"> Skills & Hardworking</h5>
     <div class="cardsGroup">
         <div *ngFor="let skill of skills" >
             <div class="card" style="width: 18rem;">
             <img src={{skill?.url_logo}} class="card-img-top imagen-habilidad" alt="...">
             <section>
-                <div class="btn" (click)="setInfo(skill)" *ngIf="isUserLogged" data-bs-toggle="modal"  data-bs-target="#deleteModalSkill" title="Delete Skill"><i class="fa-regular fa-circle-xmark"></i></div>
+                <div class="btn" (click)="setInfo(skill)" *ngIf="isUserLogged" data-bs-toggle="modal"  data-bs-target="#deleteModalSkill" title="Delete Skill"><i class="fa fa-trash"></i></div>
                 <div class="btn" (click)="setInfo(skill)" *ngIf="isUserLogged" data-bs-toggle="modal" data-bs-target="#editModalSkill"><i class="fa fa-pen"></i></div>
             </section>
             </div>
