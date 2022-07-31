@@ -6,8 +6,9 @@
         <div id="projects"*ngFor="let project of projects">
             <div class="col">
                 <div class="card">
-                    <div class="card-body ">
-                        <h6 class="card-title nombre"> {{project?.name}}</h6>
+                    <div class="card-body">
+                        <h6 class="card-title nombre" style="justify-content: center;"> {{project?.name}}</h6>
+                        <img src={{project?.url_image}} class="card-img-top imagen-habilidad" alt="...">
                         <p class="card-text descripcion"> {{project?.description}}</p>
                         <a [href]="project?.url_project">Repositorio</a>
                     </div>
