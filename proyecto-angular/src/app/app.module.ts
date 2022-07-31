@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
 import { ContenedorComponent } from './contenedor/contenedor.component';
 import { PortfolioService } from './servicios/portfolio.service';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -26,6 +27,7 @@ import { PortfolioService } from './servicios/portfolio.service';
     HabilidadesComponent,
     IniciarSesionComponent,
     ContenedorComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

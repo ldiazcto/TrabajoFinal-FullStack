@@ -10,7 +10,7 @@
                         <h6 class="card-title nombre" style="justify-content: center;"> {{project?.name}}</h6>
                         <img src={{project?.url_image}} class="card-img-top imagen-habilidad" alt="...">
                         <p class="card-text descripcion"> {{project?.description}}</p>
-                        <a [href]="project?.url_project">Repositorio</a>
+                        <a [href]="project?.url_project">Repository</a>
                     </div>
                     <section>
                         <div class="btn" (click)="setInfo(project)" *ngIf="isUserLogged" data-bs-toggle="modal"  data-bs-target="#deleteModalProject" title="Delete Project"><i class="fa fa-trash"></i></div>
