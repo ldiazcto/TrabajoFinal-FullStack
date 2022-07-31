@@ -17,6 +17,17 @@
     font-size: 2rem;
 }
 
+img{
+    flex-basis: fit-content;
+    max-width: 90%;
+    max-inline-size: 72%;
+    margin: 5%;
+}
+
+img.card-img-top.imagen-habilidad:hover {
+    transform: scale(1.2);
+}
+
 .seccion-skills{
     margin-bottom: 100px;
     font-size: 3.5vw;
@@ -38,6 +49,8 @@
 
 .card{
     position: relative;
+    background-color: transparent;
+    border: none;
 }
 
 .btn-edit{
