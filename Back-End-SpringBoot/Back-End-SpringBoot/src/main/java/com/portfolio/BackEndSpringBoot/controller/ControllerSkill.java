@@ -16,28 +16,6 @@ public class ControllerSkill {
 
     @Autowired
     private ISkillService skillService;
-//
-//    @PostMapping("/add")
-//    public void add_skill(@RequestBody Skill skill){
-//        skillService.add_skill(skill);
-//    }
-//
-//    @GetMapping("/see")
-//    @ResponseBody
-//    public List<Skill> get_skills(){
-//        return skillService.get_skills();
-//    }
-//
-//    @DeleteMapping("/delete/{id}")
-//    public void delete_skill(@PathVariable Long id){
-//        skillService.delete_skill(id);
-//    }
-//
-//    @PutMapping("/edit")
-//    public void edit_skill(@RequestBody Skill skill){
-//        //Skill editSkill = skillService.edit_skill(skill);
-//        skillService.edit_skill(skill);
-//    }
 
     @GetMapping
     public ResponseEntity<List<Skill>> getAllSkills(){
