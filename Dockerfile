@@ -1,4 +1,4 @@
 FROM amazoncorretto:11-alpine-jdk
 MAINTAINER emaaristimuno
-COPY target/NAME-YOUR-FILE-BUILD-SPRINGBOOT.jar NAME-YOUR-FILE-BUILDSPRINGBOOT.jar
-ENTRYPOINT ["java","-jar","/NAME-YOUR-FILE-BUILD-SPRINGBOOT.jar"]
+COPY target/demo-0.0.1-SNAPSHOT.jar demo-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java","-jar","/demo-0.0.1-SNAPSHOT.jar"]
